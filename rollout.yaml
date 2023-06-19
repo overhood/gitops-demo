@@ -5,6 +5,7 @@ metadata:
 spec:
   replicas: 4
   strategy:
+    canary:
       canaryService: rollouts-demo-canary
       stableService: rollouts-demo-stable
       trafficRouting:
